@@ -124,3 +124,56 @@ clip-path: polygon(49% 6%, 75% 10%, 100% 4%, 100% 87%, 76% 91%, 49% 85%, 23% 90%
 .main__espace {
     padding-top: 30px;
 }
+.main__imgcontact {
+    clip-path: polygon(45% 2%, 74% 5%, 100% 4%, 100% 48%, 100% 100%, 0 100%, 0% 70%, 0 2%, 16% 4%);
+}
+.main__contact {
+    color: var(--footage, #D7D7D7);
+        font-family: 'Futura Md BT';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.main__contactimgtxt {
+    color: var(--text, #D7D7D7);
+        text-align: center;
+        font-weight: 300;
+        line-height: 200%;
+        position: absolute;
+        top: 63%;
+        /* Ajustez selon votre besoin */
+        left: 50%;
+        /* Ajustez selon votre besoin */
+        transform: translate(-50%, -75%);
+}
+.main__casecontact input[type="text"],
+.main__casecontact textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    /* Garantit que la largeur inclut le padding et la bordure */
+    font-family: 'Helvetica Neue';
+    font-size: 20px;
+    color: #D7D7D7;
+}
+.main__bouttoncontact {
+        padding: 10px 20px;
+            font-family: 'Futura Md BT';
+            background-color: transparent;
+            /* Fond transparent */
+            color: #D7D7D7;
+            /* Couleur du texte */
+            border: 1px solid #D7D7D7;
+            /* Bordure pleine, mais transparente */
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 300;
+            transition: border-color 0.3s ease;
+            /* Transition pour l'effet creux */
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Raw Footage</title>
+
+    <link rel="stylesheet" href="../fr/src/css/style.css" />
+    <link rel="icon" href="../fr/assets/icones/menuburger.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body class="body">
+    <header x-show="!menuIsOpen" class="header">
+        <div class="header__rawfootage">
+            <img class="header__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+            <a href="../fr/index.html" class="header__raw">Raw </a><a href="../fr/index.html" class="header__footage">
+                Footage</a>
+            <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuburger"
+                src="../fr/assets/icones/menuburger.svg" alt="menuburger" />
+        </div>
+        <div class="header__ligne"></div>
+        </div>
+    </header>
+    </nav>
+    <menu class="menu">
+        <nav id="mainNav" x-show="menuIsOpen">
+            <menu class="menu">
+                <div class="menu__rawfootage">
+                    <img class="menu__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+                    <a href="../fr/index.html" class="menu__raw">Raw </a><a href="../fr/index.html"
+                        class="menu__footage">
+                        Footage</a>
+                    <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menu__menuburger"
+                        src="../fr/assets/icones/croix.svg" alt="croix" />
+                </div>
+                <div class="menu__ligne"></div>
+                </div>
+            </menu>
+            <ul class="menu__overlay">
+                <div x-data="{ estOuvert: false }">
+                    <h2 @click="estOuvert = ! estOuvert" class="menu__titre">ARTICLES<img class="menu__blood"
+                            src="../fr/assets/icones/blood.svg"></h2>
+                    <span x-show="estOuvert">
+                        <li><a class="menu__des" href="articlereplique.html">Une réplique profonde et pertinente</a>
+                        </li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlefilm.html">Le film “Boyz N The Hood”</a></li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlereal.html">John Singleton, le réalisateur</a></li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlemusique.html">La musique associée, par Ice Cube</a></li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlelivre.html">Un livre à retenir, “The Hate U Give”</a></li>
+                        <div class="menu__espace"> </div>
+                    </span>
+                </div>
+                <h2 class="menu__titre">DÉCOUVRIR<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="livres.html">Livres associés</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="galerie.html">Galerie de films</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="projets.html">Projets étudiants</a></li>
+                <div class="menu__espace"></div>
+                <p class="menu__des2">© 2024 - Axel Saltini<img href="../en/" class="menu__langue"
+                        src="../fr/assets/icones/english.svg"></p>
+            </ul>
+        </nav>
+        </a>
+    </menu>
+    <article>
+        <section x-show="!menuIsOpen">
+            <h1 class="article__titre2">Me<a class="article__rouge">contacter</a></h1>
+        </section>
+                <section x-show="!menuIsOpen" class="article__section2">
+            <h4 class="article__intertitre">Une remarque, une question ?</h4>
+            <p class="article__texte">Si vous avez la moindre remarque à faire sur le site internet, que ce soit au
+                niveau des erreurs dans les textes ou
+                graphiquement, n’hésitez pas à me contacter grâce à au formulaire juste en dessous !</p>
+            <p class="article__texte">Je répondrais également à n’importe
+                laquelle de vos questions, tant qu’elles concernent le site web.</p>
+        </section>
+        <section x-show="!menuIsOpen">
+                <div class="main__conteneur">
+                    <center>
+                        <div class="main__relative">
+                            <img src="../fr/assets/img/contact.webp" alt="contact" class="main__imgcontact">
+                            <center>
+                                <div class="main__contactimgtxt">
+                                    <section class="main__sectioncontact">
+                                        <form>
+                                            <div>
+                                                <label class="main__contact" for="nom">Nom</label>
+                                                <div class="main__casecontact">
+                                                <input type="text" name="nom" id="nom" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label class="main__contact" for="email">E-mail</label>
+                                                <div class="main__casecontact">
+                                                <input type="text" name="email" id="email" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label class="main__contact" for="message">Message</label>
+                                                <div class="main__casecontact">
+                                                <textarea id="message" name="message" rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="main__espace"></div>
+                                            <div>
+                                                <button class="main__bouttoncontact" type="submit">Envoyer</button>
+                                            </div>
+                                        </form>
+                                    </section>
+                                </div>
+                            </center>
+                        </div>
+                    </center>
+                </div>
+            </center>
+        </section>
+    </article>
+    <footer x-show="!menuIsOpen">
+        <div class="footer__ligne"></div>
+        <section class="footer__rawfootage">
+            <a href="../fr/index.html" class="footer__raw">Raw </a><a href="../fr/index.html" class="footer__footage">
+                Footage</a>
+        </section>
+        <section class="footer__texte">
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=contact.html>Contact</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=apropos.html>A propos</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=glossaire.html>Glossaire</a></h3>
+            <div class="footer__espace"></div>
+            <h3 class="footer__titre">Mentions légales</h3>
+            <p class="footer__p">Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                    class="footer__hyperlien2" href="https://butmmi.thomasjeu.fr/#/">MMI de
+                    Montbéliard.</a></p>
+            <div class="footer__espace"></div>
+            <p class="footer__p"><a href="mailto:axel.saltini@edu.univ-fcomte.fr">axel.saltini@edu.univ-fcomte.fr</a>
+            </p>
+            <div class="footer__espace"></div>
+            <div class="footer__espace"></div>
+            <p class="footer__p">© 2024 - Axel Saltini</p>
+        </section>
+    </footer>
+</body>
