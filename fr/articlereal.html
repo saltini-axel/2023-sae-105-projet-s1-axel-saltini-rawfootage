@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Raw Footage</title>
+
+    <link rel="stylesheet" href="../fr/src/css/style.css" />
+    <link rel="icon" href="../fr/assets/icones/menuburger.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body class="body">
+    <header x-show="!menuIsOpen" class="header">
+        <div class="header__rawfootage">
+            <img class="header__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+            <a href="../fr/index.html" class="header__raw">Raw </a><a href="../fr/index.html" class="header__footage">
+                Footage</a>
+            <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuburger"
+                src="../fr/assets/icones/menuburger.svg" alt="menuburger" />
+        </div>
+        <div class="header__ligne"></div>
+        </div>
+    </header>
+    </nav>
+    <menu class="menu">
+        <nav id="mainNav" x-show="menuIsOpen">
+            <menu class="menu">
+                <div class="menu__rawfootage">
+                    <img class="menu__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+                    <a href="../fr/index.html" class="menu__raw">Raw </a><a href="../fr/index.html"
+                        class="menu__footage">
+                        Footage</a>
+                    <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menu__menuburger"
+                        src="../fr/assets/icones/croix.svg" alt="croix" />
+                </div>
+                <div class="menu__ligne"></div>
+                </div>
+            </menu>
+            <ul class="menu__overlay">
+                <div x-data="{ estOuvert: false }">
+                    <h2 @click="estOuvert = ! estOuvert" class="menu__titre">ARTICLES<img class="menu__blood"
+                            src="../fr/assets/icones/blood.svg"></h2>
+                    <span x-show="estOuvert">
+                        <li><a class="menu__des" href="articlereplique.html">Une réplique profonde et pertinente</a>
+                        </li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlefilm.html">Le film “Boyz N The Hood”</a></li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlereal.html">John Singleton, le réalisateur</a></li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlemusique.html">La musique associée, par Ice Cube</a></li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlelivre.html">Un livre à retenir, “The Hate U Give”</a></li>
+                        <div class="menu__espace"> </div>
+                    </span>
+                </div>
+                <h2 class="menu__titre">DÉCOUVRIR<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="livres.html">Livres associés</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="galerie.html">Galerie de films</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="projets.html">Projets étudiants</a></li>
+                <div class="menu__espace"></div>
+                <p class="menu__des2">© 2024 - Axel Saltini<img href="../en/" class="menu__langue"
+                        src="../fr/assets/icones/english.svg"></p>
+            </ul>
+        </nav>
+        </a>
+    </menu>
+    <article>
+        <section x-show="!menuIsOpen">
+            <h1 class="article__titre">John <a class="article__rouge">Singleton</a></h1>
+            <center><img src="../fr/assets/img/real1.webp" alt="real1" class="article__img"></center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section">
+            <h5 class="article__lecture">Publié par Axel Saltini le 25/10 – 2 min de lecture<img class="article__blood"
+                    src="../fr/assets/icones/blood.svg"></h5>
+            <p class="article__texte"><a class="article__rouge">John Singleton</a> est un réalisateur et scénariste américain mondialement reconnu. Né en 1968, il a marqué l'histoire du
+            cinéma grâce à ses œuvres exceptionnelles et son immense impact sur l'industrie cinématographique.</p>
+            <p class="article__texte">Il a grandi à <a class="article__rouge">Los
+            Angeles</a>, dans les quartiers défavorisés de la ville, ce qui a grandement influencé son travail cinématographique.</p>
+        </section>
+        <center><img x-show="!menuIsOpen" class="article__img" src="../fr/assets/img/real2.webp" alt="real2">
+        </center>
+        <section class="article__section" x-show="!menuIsOpen">
+            <h2 class="article__intertitre">Premiers pas dans l’industrie</h2>
+            <p class="article__lecture">John s'est fait connaître pour la première fois grâce au film <a class="article__rouge">"Boyz N The Hood"</a> en 1991, qui a surpris l'industrie
+            cinématographique ainsi que le public par son réalisme et son authenticité</p>
+            <p class="article__lecture">Grâce à cette œuvre, il est devenu le réalisateur le plus jeune et <a class="article__rouge">le premier homme noir à être nominé aux Oscars</a> dans
+            la catégorie de la meilleure réalisation, à seulement 24 ans. Cela témoigne de son immense talent et de sa vision
+            artistique novatrice.</p>
+            <p class="article__lecture">Il a été salué pour sa représentation authentique des problèmes des quartiers défavorisés, une perspective qu'il a sans
+            doute acquise pendant son enfance.</p>
+            <p class="article__lecture">Il a considérablement contribué au cinéma afro-américain et a <a class="article__rouge">inspiré de nombreux autres réalisateurs</a> à explorer des
+            thèmes similaires. Son œuvre phare a grandement contribué à mettre en lumière des sujets tels que les violences
+            policières et les tensions raciales.</p>
+            <div class="article__espace"></div>
+            <h2 class="article__intertitre">Des projets captivants</h2>
+            <p class="article__lecture">Cependant, Singleton a également réalisé d'autres projets notables, notamment <a class="article__rouge">"Poetic Justice"</a> en 1993 avec Janet
+            Jackson et Tupac Shakur, ainsi que <a class="article__rouge">"Higher Learning"</a> en 1995 et <a class="article__rouge">"Rosewood"</a> en 1997.</p>
+            <p class="article__lecture">Il a également dirigé des projets télévisés tels que <a class="article__rouge">"Empire"</a> en 2016 et a contribué à populariser la série <a class="article__rouge">"Snowfall."</a></p>
+        </section>
+        <center><img src="../fr/assets/img/real3.webp" alt="real3" class="article__img" x-show="!menuIsOpen">
+        </center>
+        <section class="article__section" x-show="!menuIsOpen">
+            <h2 class="article__intertitre">La fin d’une époque</h2>
+            <p class="article__lecture">En conclusion, John Singleton était un grand homme, malheureusement <a class="article__rouge">décédé le 28 avril 2019</a>. Néanmoins, il a laissé un
+            héritage durable et a profondément marqué l'industrie du cinéma.</p>
+            <p class="article__lecture">Son travail et ses films continueront d'inspirer de nombreux cinéastes, et ses thèmes demeurent d'une grande pertinence
+            aujourd'hui. John Singleton était véritablement un <a class="article__rouge">cinéaste renommé</a>, doté d'une vision artistique et d'un impact
+            générationnel, et son influence se fera ressentir pendant encore de nombreuses années</p>
+        </section>
+        <center><a x-show="!menuIsOpen" href="articlemusique.html" class="main__button">
+                <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                <p class="main__buttontxt">ARTICLE SUIVANT</p>
+            </a>
+        </center>
+        <div class="article__espace2"></div>
+    </article>
+    <footer x-show="!menuIsOpen">
+        <div class="footer__ligne"></div>
+        <section class="footer__rawfootage">
+            <a href="../fr/index.html" class="footer__raw">Raw </a><a href="../fr/index.html" class="footer__footage">
+                Footage</a>
+        </section>
+        <section class="footer__texte">
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=contact.html>Contact</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=apropos.html>A propos</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=glossaire.html>Glossaire</a></h3>
+            <div class="footer__espace"></div>
+            <h3 class="footer__titre">Mentions légales</h3>
+            <p class="footer__p">Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                    class="footer__hyperlien2" href="https://butmmi.thomasjeu.fr/#/">MMI de
+                    Montbéliard.</a></p>
+            <div class="footer__espace"></div>
+            <p class="footer__p"><a href="mailto:axel.saltini@edu.univ-fcomte.fr">axel.saltini@edu.univ-fcomte.fr</a>
+            </p>
+            <div class="footer__espace"></div>
+            <div class="footer__espace"></div>
+            <p class="footer__p">© 2024 - Axel Saltini</p>
+        </section>
+    </footer>
+</body>

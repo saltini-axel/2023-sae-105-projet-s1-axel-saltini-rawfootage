@@ -1,0 +1,9 @@
+@import "../css/base/main.css";
+@import "../css/layout/header.css";
+@import "../css/layout/footer.css";
+@import "../css/layout/menu.css";
+@import "../css/base/article.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');

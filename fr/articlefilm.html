@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Raw Footage</title>
+
+    <link rel="stylesheet" href="../fr/src/css/style.css" />
+    <link rel="icon" href="../fr/assets/icones/menuburger.svg" />
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+
+<body class="body">
+    <header x-show="!menuIsOpen" class="header">
+        <div class="header__rawfootage">
+            <img class="header__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+            <a href="../fr/index.html" class="header__raw">Raw </a><a href="../fr/index.html" class="header__footage">
+                Footage</a>
+            <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuburger"
+                src="../fr/assets/icones/menuburger.svg" alt="menuburger" />
+        </div>
+        <div class="header__ligne"></div>
+        </div>
+    </header>
+    </nav>
+    <menu class="menu">
+        <nav id="mainNav" x-show="menuIsOpen">
+            <menu class="menu">
+                <div class="menu__rawfootage">
+                    <img class="menu__throwaway" src="../fr/assets/icones/menuburgernoir.svg" alt="menuburger" />
+                    <a href="../fr/index.html" class="menu__raw">Raw </a><a href="../fr/index.html"
+                        class="menu__footage">
+                        Footage</a>
+                    <img aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="menu__menuburger"
+                        src="../fr/assets/icones/croix.svg" alt="croix" />
+                </div>
+                <div class="menu__ligne"></div>
+                </div>
+            </menu>
+            <ul class="menu__overlay">
+                <div x-data="{ estOuvert: false }">
+                    <h2 @click="estOuvert = ! estOuvert" class="menu__titre">ARTICLES<img class="menu__blood"
+                            src="../fr/assets/icones/blood.svg"></h2>
+                    <span x-show="estOuvert">
+                        <li><a class="menu__des" href="articlereplique.html">Une réplique profonde et pertinente</a>
+                        </li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlefilm.html">Le film “Boyz N The Hood”</a></li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlereal.html">John Singleton, le réalisateur</a></li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlemusique.html">La musique associée, par Ice Cube</a></li>
+                        <div class="menu__separation"></div>
+                        <li><a class="menu__des" href="articlelivre.html">Un livre à retenir, “The Hate U Give”</a></li>
+                        <div class="menu__espace"> </div>
+                    </span>
+                </div>
+                <h2 class="menu__titre">DÉCOUVRIR<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+                <li><a class="menu__des" href="livres.html">Livres associés</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="galerie.html">Galerie de films</a></li>
+                <div class="menu__separation"></div>
+                <li><a class="menu__des" href="projets.html">Projets étudiants</a></li>
+                <div class="menu__espace"></div>
+                <p class="menu__des2">© 2024 - Axel Saltini<img href="../en/" class="menu__langue"
+                        src="../fr/assets/icones/english.svg"></p>
+            </ul>
+        </nav>
+        </a>
+    </menu>
+    <article>
+        <section x-show="!menuIsOpen">
+            <h1 class="article__titre">“Boyz N The <a class="article__rouge">Hood</a>"</h1>
+            <center><img src="../fr/assets/img/film1.webp" alt="film1" class="article__img"></center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section">
+            <h5 class="article__lecture">Publié par Axel Saltini le 25/10 – 3 min de lecture<img class="article__blood"
+                    src="../fr/assets/icones/blood.svg"></h5>
+            <p class="article__texte">Le film "Boyz N The Hood" est un <a class="article__rouge">classique des années 90</a>, réalisé par John Singleton et sorti en 1991. Il traite du mode
+            de vie des Afro-Américains vivant dans les quartiers défavorisés de Los Angeles. Les acteurs principaux sont Cuba
+            Gooding Jr., Morris Chestnut et Ice Cube, qui jouent les trois personnages principaux.</p>
+        </section>
+        <center><img x-show="!menuIsOpen" class="article__img" src="../fr/assets/img/film2.webp" alt="film2">
+        </center>
+        <section class="article__section" x-show="!menuIsOpen">
+            <h2 class="article__intertitre">Une histoire authentique</h2>
+            <p class="article__lecture">L'histoire se déroule en Amérique, dans un quartier où la <a class="article__rouge">violence</a>, la <a class="article__rouge">pauvreté</a>, la <a class="article__rouge">criminalité</a> et le <a class="article__rouge">racisme</a> sont
+            omniprésents. Les jeunes qui vivent là-bas doivent cohabiter avec de nombreux gangs commettant de nombreux crimes et
+            endurer la pression sociale.</p>
+            <p class="article__lecture">On suit les aventures de Tre, un enfant qui vient d'emménager chez son père, avec pour objectif de mener une vie
+            ordinaire avec ses amis. Cependant, ils seront rapidement confrontés aux <a class="article__rouge">injustices raciales</a> et aux tensions
+            communautaires tout au long du film.</p>
+            <p class="article__lecture">La présence de policiers racistes, le harcèlement, les menaces et même les meurtres règnent dans ces quartiers de Los
+            Angeles.
+            Le réalisme des événements montrés est l'un des points forts du film, mais la morale en est l'aspect le plus impactant.</p>
+        </section>
+        <div x-show="!menuIsOpen" class="article__ligne"></div>
+        <center><video class="article__video" x-show="!menuIsOpen" height="200" controls>
+            <source src="../fr/assets/video/videofilm.mp4" type="video/mp4">
+        </video>
+        <figcaption x-show="!menuIsOpen" class="article__caption">"La vengeance" - Boyz N The Hood</figcaption>
+        </center>
+        <div x-show="!menuIsOpen" class="article__ligne"></div>
+        <section class="article__section" x-show="!menuIsOpen">
+            <h2 class="article__intertitre">Le point culminant</h2>
+            <p class="article__lecture">En effet, c'est vers les derniers instants du film que Ricky, un proche de Tre, <a class="article__rouge">meurt aux mains</a> d'un membre d'un gang.
+            Le frère de Ricky s'empresse d'assassiner le meurtrier, tandis que le personnage principal renonce à contrecœur à venger
+            son ami.</p>
+            <p class="article__lecture">Le frère sera retrouvé <a class="article__rouge">mort</a> trois semaines plus tard. Cette fin tragique illustre le problème communautaire que la
+            violence des gangs cause. La vengeance et la violence n'apportent que des ennuis, et c'est l'acceptation et la
+            détermination qui permettront à la communauté noire d'avancer ensemble.</p>
+            <div class="article__espace"></div>
+            <h2 class="article__intertitre">Une triste réalité</h2>
+            <p class="article__lecture">Enfin, ce film a été salué pour sa représentation fidèle de la vie dans les <a class="article__rouge">quartiers pauvres</a>, mettant en avant les
+            inégalités auxquelles la communauté noire est confrontée.
+            Les sujets abordés, tels que le racisme, les tensions raciales et les violences des gangs, sont toujours d'actualité.</p>
+            <p class="article__lecture">C'est un film très pertinent qui, encore aujourd'hui, capte très bien l'esprit des <a class="article__rouge">populations défavorisées</a> et apporte
+            un message d'espoir à la communauté noire.</p>
+        </section>
+        <center><a x-show="!menuIsOpen" href="articlereal.html" class="main__button">
+                <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                <p class="main__buttontxt">ARTICLE SUIVANT</p>
+            </a>
+        </center>
+        <div class="article__espace"></div>
+        <center><img x-show="!menuIsOpen" class="article__img" src="../fr/assets/img/filmographie1.webp" alt="film2">
+        </center>
+        <section class="article__section" x-show="!menuIsOpen">
+            <h2 class="article__intertitre">L'article vous a plu ?<img class="menu__blood" src="../fr/assets/icones/blood.svg"></h2>
+            <p class="article__lecture">Découvrez ci-dessous d'autres films abordant des sujets similaires à "Boyz N The Hood" !</p>
+            <div class="article__espace"></div>
+            <center><a x-show="!menuIsOpen" href="galerie.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">GALERIE DE FILMS</p>
+                </a>
+            </center>
+            <div class="article__espace"></div>
+        </section>
+    </article>
+    <footer x-show="!menuIsOpen">
+        <div class="footer__ligne"></div>
+        <section class="footer__rawfootage">
+            <a href="../fr/index.html" class="footer__raw">Raw </a><a href="../fr/index.html" class="footer__footage">
+                Footage</a>
+        </section>
+        <section class="footer__texte">
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=contact.html>Contact</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=apropos.html>A propos</a></h3>
+            <h3 class="footer__titre"><a class="footer__hyperlien" href=glossaire.html>Glossaire</a></h3>
+            <div class="footer__espace"></div>
+            <h3 class="footer__titre">Mentions légales</h3>
+            <p class="footer__p">Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                    class="footer__hyperlien2" href="https://butmmi.thomasjeu.fr/#/">MMI de
+                    Montbéliard.</a></p>
+            <div class="footer__espace"></div>
+            <p class="footer__p"><a href="mailto:axel.saltini@edu.univ-fcomte.fr">axel.saltini@edu.univ-fcomte.fr</a>
+            </p>
+            <div class="footer__espace"></div>
+            <div class="footer__espace"></div>
+            <p class="footer__p">© 2024 - Axel Saltini</p>
+        </section>
+    </footer>
+</body>

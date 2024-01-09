@@ -1,0 +1,42 @@
+.header {
+    background-color: #0D0808;
+    margin: 0%;
+    padding: 0%;
+}
+
+.header__rawfootage {
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.header__raw {
+    margin: 0;
+    color: #D20000;
+    font-family: 'Headliner No. 45';    
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration: none;
+}
+.header__footage {
+    margin: 0;
+    color: #FFF;
+    font-family: 'Headliner No. 45';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration: none;
+}
+.header__menuburger {
+    transform: translate(80%, 15%);
+}
+.header__throwaway {
+    transform: translate(-80%, 15%);
+}
+.header__ligne {
+    padding-bottom: 5px;
+    border-top: 1px solid #FFF;
+}

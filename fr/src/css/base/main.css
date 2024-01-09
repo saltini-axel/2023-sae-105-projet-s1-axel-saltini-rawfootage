@@ -1,0 +1,126 @@
+.body {
+    margin: 0;
+    background-color: #0D0808;
+}
+.main__imageaccueil {
+clip-path: polygon(50% 6%, 100% 6%, 100% 35%, 100% 82%, 75% 87%, 44% 84%, 19% 89%, 0 79%, 0% 35%, 0 6%);
+}
+.main__replique {
+    color: var(--text, #D7D7D7);
+        text-align: center;
+        font-family: Londrina Solid;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin: 0;
+        margin-top: 5px;
+}
+.main__red {
+    color: var(--text, #D20000);
+}
+.main__imageaccueil2 {
+    clip-path: polygon(51% 12%, 82% 8%, 100% 13%, 100% 85%, 76% 93%, 46% 89%, 16% 93%, 0 88%, 0 15%, 14% 8%);
+}
+.main__conteneur {
+    position: relative;
+    display: inline-block;
+}
+.main__relative {
+    position: relative;
+}
+.main__texteimage {
+    color: var(--text, #D7D7D7);
+        text-align: center;
+        font-family: Londrina Solid;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+        position: absolute;
+            top: 63%;
+            /* Ajustez selon votre besoin */
+            left: 50%;
+            /* Ajustez selon votre besoin */
+            transform: translate(-50%, -80%);
+}
+.main__articletitre {
+    text-align: left;
+    width: 185px;
+        height: 90px;
+        flex-shrink: 0;
+    color: var(--footage, #D7D7D7);
+        font-family: 'Futura Md BT';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+}
+.main__articledes {
+        text-align: left;
+    width: 170px;
+        height: 150px;
+        flex-shrink: 0;
+    color: var(--footage, #D7D7D7);
+        font-family: Londrina Solid;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 140%;
+}
+.main__centre {
+    text-align: center;
+}
+.main__block {
+    padding-left: px;
+    display: inline-block;
+        vertical-align: top;
+        /* Ajuste l'alignement vertical si nécessaire */
+        width: 47%;
+        /* Ajustez la largeur selon vos besoins */
+}
+.main__block2 {
+    padding-left: px;
+    display: inline-block;
+        vertical-align: top;
+        /* Ajuste l'alignement vertical si nécessaire */
+        width: 42%;
+        /* Ajustez la largeur selon vos besoins */
+        margin-left: 30px;
+
+}
+.main__imgarticle {
+    transform: translate(0%, 14%);
+}
+
+.main__button {
+    text-align: center;
+    margin: 0;
+    padding-bottom: -10px;
+    border: 2px solid var(--text-red, #D20000);
+        display: inline-block;
+    text-decoration: none;
+}
+.main__buttontxt {
+    color: var(--text-red, #D20000);
+        font-family: 'Futura Md BT';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 300%;
+        vertical-align: top;
+        display: inline-block;
+        padding: 0%;
+        margin: 0%;
+        margin-right: 10px;
+        text-decoration: none;
+}
+.main__imgtransi {
+clip-path: polygon(54% 10%, 77% 6%, 100% 13%, 100% 87%, 76% 85%, 47% 90%, 19% 86%, 0 88%, 0 14%, 19% 6%);
+}
+.main__imgtransi2 {
+clip-path: polygon(49% 6%, 75% 10%, 100% 4%, 100% 87%, 76% 91%, 49% 85%, 23% 90%, 0 83%, 0 7%, 19% 10%);
+}
+.main__espace {
+    padding-top: 30px;
+}
