@@ -177,3 +177,100 @@ clip-path: polygon(49% 6%, 75% 10%, 100% 4%, 100% 87%, 76% 91%, 49% 85%, 23% 90%
             transition: border-color 0.3s ease;
             /* Transition pour l'effet creux */
 }
+.overlay {
+    position: absolute;
+    /* Sit on top of the page content */
+    width: 100vw;
+    /* Full width (cover the whole page) */
+    height: 100vh;
+    /* Full height (cover the whole page) */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    /* Stay at the left */
+    right: 0;
+    /* Stay at the right */
+    bottom: 0;
+    /* Stay at the bottom */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    cursor: pointer;
+    /* Add a pointer on hover */
+    display: grid;
+    /* Use a grid for easy centering */
+    place-items: center
+        /* Center vertically and horizontally */
+}
+
+.overlay::after {
+    /* Add content : "X" */
+    content: "X";
+    /* White text color */
+    color: white;
+    /* Black background color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Font family "sans-serif" */
+    font-family: sans-serif;
+    /* Centered text */
+    text-align: center;
+    /* Line height ( idem height ) */
+    line-height: 2rem;
+    height: 2rem;
+    /* Display as a block */
+    display: block;
+    /* Position absolute */
+    position: absolute;
+    /* 1rem from the top */
+    top: 1rem;
+    /* 1rem from the right */
+    left: 1rem;
+    /* 2rem width */
+    width: 2rem;
+    /* 2rem height */
+    height: 2rem;
+    /* White border of 2px */
+    border: 2px solid white;
+    /* Rounded border */
+    border-radius: 50%;
+}
+
+.overlay>figure {
+    /* No margin */
+    margin: 0;
+    /* 1rem padding */
+    padding: 1rem;
+    /* White border of 2px */
+    border: 2px solid white;
+}
+
+.overlay>figure>img {
+    /* Max width 100% for responsive image */
+    max-width: 100%;
+    /* Height auto for keeping the ratio */
+    height: auto;
+}
+.main__titregalerie {
+    color: var(--text, #D7D7D7);
+    text-align: center;
+        font-family: 'Futura Md BT';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 22.4px */
+        margin: 0px;
+
+}
+.main__pgalerie {
+    color: var(--text, #D7D7D7);
+    
+        text-align: left;
+        font-family: 'Helvetica';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        padding: 50px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+}
