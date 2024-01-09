@@ -99,6 +99,7 @@ justify-content list-style margin none padding
         left: 50%;
         /* Ajustez selon votre besoin */
         transform: translate(-50%, -150%);
+        text-decoration: none;
 }
 .carrousel__nom {
     margin: 0%;

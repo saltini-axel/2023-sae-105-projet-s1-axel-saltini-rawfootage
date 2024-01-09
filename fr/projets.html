@@ -83,7 +83,7 @@
                 étudiants du département MMI de Montbéliard !</p>
         </section>
         <section x-show="!menuIsOpen">
-            <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}" x-show="!menuIsOpen" x-transition.duration.800ms>
+            <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}" x-show="!menuIsOpen">
                 <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                     @click="parent = $refs.parent; parent.scrollLeft -= parent.clientWidth">←</button>
                 <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
@@ -100,7 +100,7 @@
                                         </a>
                                         <center>
                                             <a href="https://donnemoitontest.thomasjeu.fr/" class="carrousel__texteimage">
-                                                <h5 class="carrousel__nom">Donne-moi ton nom</h5>
+                                                <h5 class="carrousel__nom">"Donne-moi ton nom"</h5>
                                                 <h5 class="carrousel__nom">Nail DEZZAZ</h5>
                                             </a>
                                         </center>
@@ -112,30 +112,107 @@
                     </div>
                     <div id="ecran-2" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/carrouselartcontemporain.webp" alt="image ecran 2">
-                            <figcaption>art contemporain</figcaption>
+                            <div class="main__conteneur">
+                                <center>
+                                    <div class="main__relative">
+                                        <a href="https://donnemoitontest.thomasjeu.fr/">
+                                            <img class="carrousel__image" src="../fr/assets/img/carrousel2.webp" alt="image ecran 2">
+                                        </a>
+                                        <center>
+                                            <a href="https://donnemoitontest.thomasjeu.fr/" class="carrousel__texteimage">
+                                                <h5 class="carrousel__nom">"Kiki's Journal"</h5>
+                                                <h5 class="carrousel__nom">Blandine NAHORNY</h5>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </center>
+                            </div>
+                            <figcaption class="article__caption">Kiki la petite sorcière</figcaption>
                         </figure>
                     </div>
                     <div id="ecran-3" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/carrouselcerisiersenfleurs.webp" alt="image ecran 3">
-                            <figcaption>cerisiers en fleurs</figcaption>
+                            <div class="main__conteneur">
+                                <center>
+                                    <div class="main__relative">
+                                        <a href="https://donnemoitontest.thomasjeu.fr/">
+                                            <img class="carrousel__image" src="../fr/assets/img/carrousel3.webp" alt="image ecran 3">
+                                        </a>
+                                        <center>
+                                            <a href="https://donnemoitontest.thomasjeu.fr/" class="carrousel__texteimage">
+                                                <h5 class="carrousel__nom">"Spirits"</h5>
+                                                <h5 class="carrousel__nom">Viktor GHIRARDELLI</h5>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </center>
+                            </div>
+                            <figcaption class="article__caption">Le voyage de Chihiro</figcaption>
                         </figure>
                     </div>
                     <div id="ecran-4" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/carrouselnouslesarbres.webp" alt="image ecran 4">
-                            <figcaption>nous les arbres</figcaption>
+                            <div class="main__conteneur">
+                                <center>
+                                    <div class="main__relative">
+                                        <a href="https://donnemoitontest.thomasjeu.fr/">
+                                            <img class="carrousel__image" src="../fr/assets/img/carrousel4.webp" alt="image ecran 4">
+                                        </a>
+                                        <center>
+                                            <a href="https://donnemoitontest.thomasjeu.fr/" class="carrousel__texteimage">
+                                                <h5 class="carrousel__nom">"Keep The Illusion"</h5>
+                                                <h5 class="carrousel__nom">Hugo PETIT</h5>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </center>
+                            </div>
+                            <figcaption class="article__caption">Grand Budapest Hotêl</figcaption>
                         </figure>
                     </div>
                     <div id="ecran-5" class="carrousel_ecran">
                         <figure>
-                            <img src="public/img/carrouselronmueck.webp" alt="image ecran 5">
-                            <figcaption>ron mueck</figcaption>
+                            <div class="main__conteneur">
+                                <center>
+                                    <div class="main__relative">
+                                        <a href="https://donnemoitontest.thomasjeu.fr/">
+                                            <img class="carrousel__image" src="../fr/assets/img/carrousel5.webp" alt="image ecran 5">
+                                        </a>
+                                        <center>
+                                            <a href="https://donnemoitontest.thomasjeu.fr/" class="carrousel__texteimage">
+                                                <h5 class="carrousel__nom">"Insaisissables"</h5>
+                                            <h5 class="carrousel__nom">Adrien CHOULET</h5>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </center>
+                            </div>
+                            <figcaption class="article__caption">Insaisissables</figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-6" class="carrousel_ecran">
+                        <figure>
+                            <div class="main__conteneur">
+                                <center>
+                                    <div class="main__relative">
+                                        <a href="https://donnemoitontest.thomasjeu.fr/">
+                                            <img class="carrousel__image" src="../fr/assets/img/carrousel6.webp" alt="image ecran 6">
+                                        </a>
+                                        <center>
+                                            <a href="https://donnemoitontest.thomasjeu.fr/" class="carrousel__texteimage">
+                                                <h5 class="carrousel__nom">"Interstellar"</h5>
+                                                <h5 class="carrousel__nom">Victor</h5>
+                                            </a>
+                                        </center>
+                                    </div>
+                                </center>
+                            </div>
+                            <figcaption class="article__caption">Interstellar</figcaption>
                         </figure>
                     </div>
                 </div>
             </div>
+            <div class="main__espace"></div>
         </section>
     </article>
     <footer x-show="!menuIsOpen">
