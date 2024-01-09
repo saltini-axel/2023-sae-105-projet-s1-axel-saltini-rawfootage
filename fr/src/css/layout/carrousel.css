@@ -43,13 +43,13 @@
             position: absolute;
             top: calc(100vw / 16 * 9 / 2 + 1rem);
             /* centre verticalement ~50% vertical */
-            transform: translateY(-50%);
+            transform: translateY(150%);
             /* methode du point mort */
-            width: 2rem;
-            height: 2rem;
-            background: rgba(0, 0, 0, 0.5);
+            width: 1.8rem;
+            height: 1.8rem;
+            background: #000000;
             border-radius: 50%;
-            border: none;
+            border: solid 2px #D7D7D7;
             display: grid;
             place-content: center;
             color: #fff;
