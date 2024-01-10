@@ -1,12 +1,14 @@
 @font-face {
     font-family: 'Headliner No. 45';
-    src: url(../fr/src/css/fonts/HeadlinerNo45.ttf);
+    src: url(../css/fonts.css/HeadlinerNo.45DEMO.ttf);
 }
+
 @font-face {
     font-family: 'Futura Md BT';
     src: url(../fr/src/css/fonts/FuturaMdBTMedium.ttf);
 }
+
 @font-face {
     font-family: 'Helvetica';
-    src: url(../fr/src/css/fonts/HelveticaNeue.ttf);    
+    src: url(../fr/src/css/fonts/HelveticaNeue.ttf);
 }
