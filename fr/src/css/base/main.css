@@ -302,10 +302,16 @@
 
 .main__livresimg {
     clip-path: polygon(100% 45%, 82% 100%, 100% 100%, 100% 0, 0 0, 0 99%, 20% 45%, 0 0, 82% 0, 100% 45%);
+    margin: 0%;
 }
 
 .main__livresimg2 {
     clip-path: polygon(100% 100%, 82% 100%, 100% 0, 83% 14%, 21% 13%, 0 100%, 0 0, 21% 13%, 83% 14%, 100% 0);
+        margin: 0%;
+}
+.main__livresimg3 {
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 100% 87%, 20% 86%, 0 100%, 0 0, 20% 86%, 100% 87%, 100% 81%);
+        margin: 0%;
 }
 
 .main__gintertitre {
@@ -319,11 +325,32 @@
 }
 
 .main__glecture {
+    color: var(--footage, #FFF);
+text-align: center;
+font-family: Helvetica;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 16.8px */
+}
+.main__gtexteimage {
     color: var(--text, #D7D7D7);
     text-align: center;
-    font-family: 'Helvetica';
-    font-size: 16px;
+    font-family: Londrina Solid;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
+    font-weight: 300;
+    line-height: 160%;
+    position: absolute;
+    top: 63%;
+    /* Ajustez selon votre besoin */
+    left: 50%;
+    /* Ajustez selon votre besoin */
+    transform: translate(-50%, -65%);
+}
+.main__imggauche {
+    padding-right: 50px
+}
+.main__imgdroite {
+    padding-left: 50px
 }
