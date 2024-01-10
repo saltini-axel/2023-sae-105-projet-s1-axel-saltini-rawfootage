@@ -74,7 +74,7 @@
     </menu>
     <article>
         <section x-show="!menuIsOpen">
-            <h1 class="article__titre2">Galerie de<a class="article__rouge">films</a></h1>
+            <h1 class="article__titre2">Galerie de<a class="article__rouge"> films</a></h1>
         </section>
         <section x-show="!menuIsOpen" class="article__section2">
             <p class="article__lecture">Si le réalisme et la cruauté présente de Boyz N The Hood vous ont marqués et que
@@ -107,19 +107,78 @@
         <section x-show="!menuIsOpen" class="article__section2" x-data="{imageAffichée : null}">
             <div class="article__espace"></div>
             <section x-show="!menuIsOpen" class="article__section">
-                <center><img src="../fr/assets/img/filmsquare1.webp" alt="square1"
-                        @click="imageAffichée ='../fr/assets/img/filmfull1.webp'"></center>
+                <center><img src="../fr/assets/img/filmsquare2.webp" alt="square2"
+                        @click="imageAffichée ='../fr/assets/img/filmfull2.webp'"></center>
                 <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
                     @keyup.escape.window="imageAffichée = null">
                     <figure><img :src="imageAffichée" alt="image"></figure>
             </section>
             </div>
-            <h2 class="main__titregalerie">La voie de la justice</h2>
-            <h2 class="main__titregalerie">Destin Daniel Cretton</h2>
-            <p class="main__pgalerie">Bryan Stevenson, avocat, se bat pour défendre les condamnés à tort en Alabama. Il va
-                devoir combattre un racisme
-                prononcé au sein d'un système juridique hostile afin de pouvoir espérer lutter pour la justice.</p>
-            <center><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=239735.html" class="main__button">
+            <h2 class="main__titregalerie">Loin du paradis</h2>
+            <h2 class="main__titregalerie">Todd Haynes</h2>
+            <p class="main__pgalerie">Dans les années 50, Cathy Whitaker découvre que son mari entretient une relation homosexuel avec un autre. Isolée et
+            rejetée par la société, elle finira par se lier d'amitié avec un homme noir malgré la différence de classe.</p>
+            <center><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=42137.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">EN SAVOIR PLUS</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section2" x-data="{imageAffichée : null}">
+            <div class="article__espace"></div>
+            <section x-show="!menuIsOpen" class="article__section">
+                <center><img src="../fr/assets/img/filmsquare3.webp" alt="square3"
+                        @click="imageAffichée ='../fr/assets/img/filmfull3.webp'"></center>
+                <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
+                    @keyup.escape.window="imageAffichée = null">
+                    <figure><img :src="imageAffichée" alt="image"></figure>
+            </section>
+            </div>
+            <h2 class="main__titregalerie">Dressé pour tuer</h2>
+            <h2 class="main__titregalerie">Samuel Fuller</h2>
+            <p class="main__pgalerie">Suite à un accident de voiture, un chien blanc, qui a été dressé pour agresser les personnes de couleur, est pris en
+            charge par Julie, une jeune femme déterminée à le faire changer.</p>
+            <center><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=15532.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">EN SAVOIR PLUS</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section2" x-data="{imageAffichée : null}">
+            <div class="article__espace"></div>
+            <section x-show="!menuIsOpen" class="article__section">
+                <center><img src="../fr/assets/img/filmsquare4.webp" alt="square4"
+                        @click="imageAffichée ='../fr/assets/img/filmfull4.webp'"></center>
+                <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
+                    @keyup.escape.window="imageAffichée = null">
+                    <figure><img :src="imageAffichée" alt="image"></figure>
+            </section>
+            </div>
+            <h2 class="main__titregalerie">Do The Right Thing</h2>
+            <h2 class="main__titregalerie">Spike Lee</h2>
+            <p class="main__pgalerie">À Brooklyn, lors d'une journée très chaude, le jeune Mookie travaille comme livreur dans une pizzeria locale. Alors que
+            tout le monde vaque à ses tâches, la chaleur estivale commence à exacerber les tensions raciales.</p>
+            <center><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=4834.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">EN SAVOIR PLUS</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section2" x-data="{imageAffichée : null}">
+            <div class="article__espace"></div>
+            <section x-show="!menuIsOpen" class="article__section">
+                <center><img src="../fr/assets/img/filmsquare5.webp" alt="square5"
+                        @click="imageAffichée ='../fr/assets/img/filmfull5.webp'"></center>
+                <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
+                    @keyup.escape.window="imageAffichée = null">
+                    <figure><img :src="imageAffichée" alt="image"></figure>
+            </section>
+            </div>
+            <h2 class="main__titregalerie">The Hate U Give</h2>
+            <h2 class="main__titregalerie">George Tillman Jr.</h2>
+            <p class="main__pgalerie">Après avoir été témoin de la mort de son ami d'enfance par un officier de police, Starr essaie de trouver un moyen de se
+            battre pour ce qui est juste malgré la pression de sa communauté.</p>
+            <center><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=257923.html" class="main__button">
                     <img src="../fr/assets/icones/fleche.svg" alt="fleche">
                     <p class="main__buttontxt">EN SAVOIR PLUS</p>
                 </a>
