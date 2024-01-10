@@ -1,0 +1,106 @@
+        * {
+            box-sizing: border-box;
+
+        }
+
+        img {
+            max-width: 100%;
+            /* image responsive, largeur maxi */
+            height: auto;
+            /* hauteur "auto" */
+        }
+
+        .carrousel_parent-ecrans {
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            display: flex;
+            text-align: center;
+            /* aligne horizontalement les enfants */
+            width: 100%;
+            /* largeur du parent */
+
+        }
+
+        .carrousel_ecran {
+            scroll-snap-align: start;
+            width: 100%;
+            /* largeur du parent pour chaque enfant */
+            flex: none;
+            /* permet de garder toute la largeur du parent */
+        }
+
+        .carrousel_ecran figure {
+            margin: 0;
+            /* enlève les marges par défaut */
+        }
+
+        .carrousel {
+            position: relative;
+        }
+
+        .carrousel_btn {
+            position: absolute;
+            top: calc(100vw / 16 * 9 / 2 + 1rem);
+            /* centre verticalement ~50% vertical */
+            transform: translateY(150%);
+            /* methode du point mort */
+            width: 1.8rem;
+            height: 1.8rem;
+            background: #000000;
+            border-radius: 50%;
+            border: solid 2px #D7D7D7;
+            display: grid;
+            place-content: center;
+            color: #fff;
+        }
+
+        .carrousel_btn-avant {
+            left: 0;
+        }
+
+        .carrousel_btn-apres {
+            right: 0;
+        }
+
+        /* en vrac :
+0 0 1rem display center flex gap 
+justify-content list-style margin none padding
+*/
+        .carrousel_liste-liens {
+            display: flex;
+            /* aligne horizontalement les enfants */
+            justify-content: center;
+            /* centre horizontalement les enfants */
+            margin: 0;
+            /* enlève les marges par défaut */
+            padding: 0;
+            /* enlève les padding par défaut */
+            list-style: none;
+            /* enlève les puces par défaut */
+            gap: 1rem;
+            /* espace entre les enfants */
+        }
+.carrousel__image {
+            border: 2px solid #D7D7D7;
+            border-radius: 15px;    
+    }
+.carrousel__texteimage {
+    color: var(--text, #D7D7D7);
+        text-align: center;
+        font-family: 'Futura Md BT';
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+        position: absolute;
+        top: 63%;
+        /* Ajustez selon votre besoin */
+        left: 50%;
+        /* Ajustez selon votre besoin */
+        transform: translate(-50%, -150%);
+        text-decoration: none;
+}
+.carrousel__nom {
+    margin: 0%;
+}

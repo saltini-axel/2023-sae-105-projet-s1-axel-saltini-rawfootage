@@ -1,0 +1,103 @@
+.article__titre {
+    color: var(--text, #D7D7D7);
+        text-align: center;
+        font-family: Londrina Solid;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 140%;
+        /* 30.8px */
+}
+.article__titre2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: var(--text, #D7D7D7);
+    text-align: center;
+    font-family: Londrina Solid;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 140%;
+    /* 30.8px */
+}
+.article__rouge {
+    color: var(--text, #D20000);  
+}
+.article__img {
+    clip-path: polygon(51% 7%, 80% 10%, 100% 5%, 100% 91%, 83% 90%, 56% 97%, 20% 90%, 0 94%, 0 8%, 20% 11%);
+}
+.article__lecture {
+    color: var(--text, #D7D7D7);
+    
+        text-align: left;
+        font-family: 'Helvetica';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+}
+.article__blood {
+    transform: translate(50%, 14%);
+    width: 3%;
+}
+.article__texte {
+    color: var(--text, #D7D7D7);
+        font-family: 'Helvetica';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 16.8px */
+}
+.article__section {
+    padding: 20px;
+}
+.article__section2 {
+    padding: 20px;
+    padding-top: 0px
+}
+.article__intertitre {
+    color: var(--text, #D7D7D7);
+        font-family: 'Futura Md BT';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 22.4px */
+}
+.article__espace {
+    padding-bottom: 15px;
+}
+.article__espace2 {
+    padding: 20px;
+}
+.article__caption {
+    padding-bottom: 2px;
+    color: #7D6B6B;
+        text-align: center;
+        font-family: 'Helvetica';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 170%;
+        /* 17px */
+}
+.article__video {
+    text-align: center;
+    justify-content: center;
+    
+}
+.article__ligne {
+            padding: 5px;
+            border-top: 1px solid #FFF;
+}
+.article__def {
+    color: #D20000;
+    font-family: 'Futura Md BT';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    margin: 0;
+}
