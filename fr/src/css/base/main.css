@@ -327,10 +327,10 @@
 }
 
 .main__glecture {
-    color: var(--footage, #FFF);
+    color: #D7D7D7;
 text-align: center;
-font-family: Helvetica;
-font-size: 12px;
+font-family: 'Helvetica';
+font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 140%; /* 16.8px */
