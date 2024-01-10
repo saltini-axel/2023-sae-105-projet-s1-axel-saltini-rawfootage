@@ -98,6 +98,32 @@
             <h2 class="main__titregalerie">Destin Daniel Cretton</h2>
             <p class="main__pgalerie">Bryan Stevenson, avocat, se bat pour défendre les condamnés à tort en Alabama. Il va devoir combattre un racisme
             prononcé au sein d'un système juridique hostile afin de pouvoir espérer lutter pour la justice.</p>
+            <center><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=239735.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">EN SAVOIR PLUS</p>
+                </a>
+            </center>
+        </section>
+        <section x-show="!menuIsOpen" class="article__section2" x-data="{imageAffichée : null}">
+            <div class="article__espace"></div>
+            <section x-show="!menuIsOpen" class="article__section">
+                <center><img src="../fr/assets/img/filmsquare1.webp" alt="square1"
+                        @click="imageAffichée ='../fr/assets/img/filmfull1.webp'"></center>
+                <div class="overlay" x-show="imageAffichée" @click="imageAffichée = null"
+                    @keyup.escape.window="imageAffichée = null">
+                    <figure><img :src="imageAffichée" alt="image"></figure>
+            </section>
+            </div>
+            <h2 class="main__titregalerie">La voie de la justice</h2>
+            <h2 class="main__titregalerie">Destin Daniel Cretton</h2>
+            <p class="main__pgalerie">Bryan Stevenson, avocat, se bat pour défendre les condamnés à tort en Alabama. Il va
+                devoir combattre un racisme
+                prononcé au sein d'un système juridique hostile afin de pouvoir espérer lutter pour la justice.</p>
+            <center><a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=239735.html" class="main__button">
+                    <img src="../fr/assets/icones/fleche.svg" alt="fleche">
+                    <p class="main__buttontxt">EN SAVOIR PLUS</p>
+                </a>
+            </center>
         </section>
     </article>
     <footer x-show="!menuIsOpen">

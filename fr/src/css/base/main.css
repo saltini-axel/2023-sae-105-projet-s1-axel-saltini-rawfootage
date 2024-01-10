@@ -178,7 +178,7 @@ clip-path: polygon(49% 6%, 75% 10%, 100% 4%, 100% 87%, 76% 91%, 49% 85%, 23% 90%
             /* Transition pour l'effet creux */
 }
 .overlay {
-    position: absolute;
+    position: fixed;
     /* Sit on top of the page content */
     width: 100vw;
     /* Full width (cover the whole page) */
@@ -198,7 +198,7 @@ clip-path: polygon(49% 6%, 75% 10%, 100% 4%, 100% 87%, 76% 91%, 49% 85%, 23% 90%
     /* Add a pointer on hover */
     display: grid;
     /* Use a grid for easy centering */
-    place-items: center
+    place-items: center;
         /* Center vertically and horizontally */
 }
 
@@ -210,7 +210,7 @@ clip-path: polygon(49% 6%, 75% 10%, 100% 4%, 100% 87%, 76% 91%, 49% 85%, 23% 90%
     /* Black background color */
     background-color: rgba(0, 0, 0, 0.9);
     /* Font family "sans-serif" */
-    font-family: sans-serif;
+    font-family: 'Helvetica';
     /* Centered text */
     text-align: center;
     /* Line height ( idem height ) */
@@ -272,5 +272,5 @@ clip-path: polygon(49% 6%, 75% 10%, 100% 4%, 100% 87%, 76% 91%, 49% 85%, 23% 90%
         line-height: 140%;
         padding: 50px;
         padding-top: 0px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
 }
