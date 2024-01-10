@@ -20,6 +20,7 @@
 }
 
 .main__red {
+    font-weight: bold;
     color: var(--text, #D20000);
 }
 
@@ -315,6 +316,7 @@
 }
 
 .main__gintertitre {
+    font-weight: bold;
     color: var(--text, #D20000);
     font-family: 'Futura Md BT';
     font-size: 30px;

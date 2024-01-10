@@ -21,7 +21,8 @@
     /* 30.8px */
 }
 .article__rouge {
-    color: var(--text, #D20000);  
+    color: var(--text, #D20000);
+    font-weight: bold;  
 }
 .article__img {
     clip-path: polygon(51% 7%, 80% 10%, 100% 5%, 100% 91%, 83% 90%, 56% 97%, 20% 90%, 0 94%, 0 8%, 20% 11%);
@@ -92,6 +93,7 @@
             border-top: 1px solid #FFF;
 }
 .article__def {
+    font-weight: bold;
     color: #D20000;
     font-family: 'Futura Md BT';
     font-size: 18px;
